@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "platzi-store-4e4bb": {
+      "hosting": {
+        "platzi-store": [
+          "platzi-store-4e4bb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "platzi-store-4e4bb"
+  }
+}

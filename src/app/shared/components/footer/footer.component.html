@@ -1,0 +1,38 @@
+
+<footer class="container-fluid">
+  <div class="row">
+    <div class="col-xs">
+      <h3>Cuentanos</h3>
+      <p class="box">
+        Dejanos saber tu experiencia resolviendo esta breve encuesta</p>
+        <button mat-raised-button color="primary">Ir</button>
+    </div>
+    <div class="col-xs">
+      <div class="box-footer">
+        <mat-list>
+          <div mat-subheader>Folders</div>
+          <mat-list-item *ngFor="let folder of folders">
+            <mat-icon mat-list-icon>folder</mat-icon>
+            <div mat-line>{{folder.name}}</div>
+            <div mat-line> {{folder.updated | date}} </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <div class="box">
+        <h3>Contacto</h3>
+        <div>
+          <mat-form-field  class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput [formControl]="emailField" placeholder="Ex. pat@example.com">
+          </mat-form-field>
+          <button mat-raised-button [disabled]="emailField.valid" (click)="sendEmail()">Enviar</button>
+        </div>
+
+
+      </div>
+    </div>
+  </div> 
+</footer>

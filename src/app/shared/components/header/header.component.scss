@@ -1,0 +1,22 @@
+
+.header-row {
+  width: 100%
+}
+
+nav > a {
+  margin: 0 1%;
+}
+
+nav > a:hover {
+  background-color: gray;
+  color: white;
+}
+
+nav > a.active {
+  background-color: black;
+}
+
+.carrito:hover {
+  color: black;
+  text-decoration: none;
+}
